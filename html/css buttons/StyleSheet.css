@@ -1,0 +1,72 @@
+button{
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+button:before,button:after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.btn1:hover {
+    border: 2px solid #ff96ad;
+    color: #ff96ad; 
+    background-color: #17181c;
+}
+
+.btn2:hover {
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px
+    #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.btn3:hover {
+    box-shadow: inset -10.5em 0 0 0
+    #ff96ad, inset 10.5em 0 0 0 #ff96ad;
+}
+
+.btn4::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+.btn4:hover::after{
+    height: 100%;
+}
+.btn5::after {
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+.btn5:hover::after{
+    height: 100%;
+}
+
+.btn6:after{
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(S0deg);
+    transition-duration: 0.6s;
+    transform-origin: left;
+    width: 0;
+}
+.btn6:hover:after{
+    height: 100%;
+    width: 100%
+}
+
+.btn7:hover{
+    box-shadow: 10px 10px 0px #ff96ad;
+    top: -5px;
+    left: -5px;
+}
+.btn8:hover::after {
+    width: 100%;
+}
